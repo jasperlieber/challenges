@@ -7,36 +7,19 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-public class Day16Part1 {
+public class Day16Part2 {
 
 
   public static void main(String[] args) throws Exception {
-    Day16Part1 game = new Day16Part1();
+    Day16Part2 game = new Day16Part2();
     game.doit();
   }
 
   private void doit() throws Exception {
-    String input = "12345678";
 
-
-    String out = FFTn(input, 1);
-    assert (out.compareTo("48226158") == 0);
-
-    out = FFTn(out, 1);
-    assert (out.compareTo("34040438") == 0);
-
-    out = FFTn(out, 1);
-    assert (out.compareTo("03415518") == 0);
-
-    out = FFTn(out, 1);
-    assert (out.compareTo("01029498") == 0);
-
-    input = "80871224585914546619083218645595";
-    out = FFTn(input, 100);
-    assert (out.substring(0, 8).compareTo("24176176") == 0);
-
-    input = getInput();
-    out = FFTn(input, 100);
+    String input = getInput();
+    
+    String out = FFTn(input, 100);
     System.out.println(out.substring(0, 8));
   }
 
