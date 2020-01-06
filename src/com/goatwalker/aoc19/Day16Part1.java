@@ -36,6 +36,8 @@ public class Day16Part1 {
     assert (out.substring(0, 8).compareTo("24176176") == 0);
 
     input = getInput();
+    
+    System.out.println(input.length());
     out = FFTn(input, 100);
     System.out.println(out.substring(0, 8));
   }
